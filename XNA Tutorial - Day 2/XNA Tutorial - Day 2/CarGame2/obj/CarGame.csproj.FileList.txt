@@ -1,0 +1,9 @@
+obj\x86\Debug\ResolveAssemblyReference.cache
+bin\x86\Debug\Content\3dhouse.xnb
+bin\x86\Debug\Content\3dhouse.fbm\3dhouse~0.xnb
+bin\x86\Debug\CarGame.exe
+bin\x86\Debug\CarGame.pdb
+bin\x86\Debug\GameEngine.dll
+bin\x86\Debug\GameEngine.pdb
+obj\x86\Debug\CarGame.exe
+obj\x86\Debug\CarGame.pdb

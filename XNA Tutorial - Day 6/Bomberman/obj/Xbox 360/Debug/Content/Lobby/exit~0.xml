@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:MeshContent">
+    <Name>Box01</Name>
+    <Identity>
+      <SourceFilename>W:\XNA Tutorial\XNA Tutorial - Day 6\Bomberman\Content\Lobby\exit.FBX</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>2.54 0 0 0 0 7.195183E-16 -2.54 0 0 2.54 7.195183E-16 0 0.24936825 -5.949318E-33 0.600991666 1</Transform>
+    <Positions>-3.56462383 0.134670258 2.45733738 3.38188839 0.134670258 2.45733738 -3.56462383 0.134670258 -2.27690959 3.38188839 0.134670258 -2.27690959 -3.44277 0.2850263 2.36441374 3.26003456 0.2850263 2.36441374 -3.44277 0.2850263 -2.18398571 3.26003456 0.2850263 -2.18398571</Positions>
+    <Geometry>
+      <Batch>
+        <Material>#Resource1</Material>
+        <Indices>2 1 0 0 3 2 6 5 4 4 7 6 5 9 8 8 4 5 6 10 9 9 5 6 7 11 10 10 6 7 4 8 11 11 7 4</Indices>
+        <Vertices>
+          <PositionIndices>0 2 3 1 4 5 7 6 0 1 3 2</PositionIndices>
+          <Channels>
+            <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 -1 0 0 -1 0 0 -1 0 0 -1 0 -0.3361731 0.854256749 0.396526217 0.3361731 0.854256749 0.396526217 0.336173117 0.854257047 -0.396525741 -0.336173117 0.8542569 -0.396525741 -0.51097393 0.7118779 0.48180446 0.5109739 0.7118779 0.4818044 0.5109735 0.71187824 -0.4818043 -0.5109735 0.7118782 -0.4818043</VertexChannel>
+            <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">1 1 1 0.6720225 0.6720225 0.6720225 0.6720225 1 0.01661298 0.2333473 0.235164031 0.2333473 0.235164031 0.0164145827 0.01661298 0.0164145827 0.009352787 0.240553617 0.2424242 0.240553617 0.2424242 0.009208202 0.009352787 0.009208202</VertexChannel>
+          </Channels>
+        </Vertices>
+      </Batch>
+    </Geometry>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Name>01 - Default</Name>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">0.5882353 0.5882353 0.5882353</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="SpecularPower" Type="float">1.99999988</Data>
+      </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
+    </Resource>
+  </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\..\Content\Lobby\lobby.png</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

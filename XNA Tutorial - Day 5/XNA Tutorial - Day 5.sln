@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomberman1", "Bomberman1\Bomberman1.csproj", "{48099160-9273-4C96-8452-E58E1518AF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{053171C7-67C3-4C15-8549-8BE559C028F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinnedModelWindows", "SkinnedModel\SkinnedModelWindows.csproj", "{DDE5F3B9-9FFE-479F-8D48-6367761F0EF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinnedModelPipeline", "SkinnedModelPipeline\SkinnedModelPipeline.csproj", "{B3D03A81-EFD0-4CBF-A1C7-635A0958DEB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomberman2", "Bomberman2\Bomberman2.csproj", "{C61B6945-A4A0-4C33-B80C-9B33E7829E9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontRendererWindows", "FontRenderer\FontRendererWindows.csproj", "{59D34FB9-D7E8-40A0-A7A1-6E5E42B5D94A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontPipeline", "FontPipeline\FontPipeline.csproj", "{4F134CCA-8F00-4CE8-969E-A2987371AB9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomberman3", "Bomberman3\Bomberman3.csproj", "{23754948-8AF4-4A7D-A770-AF39E064F6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48099160-9273-4C96-8452-E58E1518AF0B}.Debug|x86.ActiveCfg = Debug|x86
+		{48099160-9273-4C96-8452-E58E1518AF0B}.Debug|x86.Build.0 = Debug|x86
+		{48099160-9273-4C96-8452-E58E1518AF0B}.Release|x86.ActiveCfg = Release|x86
+		{48099160-9273-4C96-8452-E58E1518AF0B}.Release|x86.Build.0 = Release|x86
+		{053171C7-67C3-4C15-8549-8BE559C028F3}.Debug|x86.ActiveCfg = Debug|x86
+		{053171C7-67C3-4C15-8549-8BE559C028F3}.Debug|x86.Build.0 = Debug|x86
+		{053171C7-67C3-4C15-8549-8BE559C028F3}.Release|x86.ActiveCfg = Release|x86
+		{053171C7-67C3-4C15-8549-8BE559C028F3}.Release|x86.Build.0 = Release|x86
+		{DDE5F3B9-9FFE-479F-8D48-6367761F0EF9}.Debug|x86.ActiveCfg = Debug|x86
+		{DDE5F3B9-9FFE-479F-8D48-6367761F0EF9}.Debug|x86.Build.0 = Debug|x86
+		{DDE5F3B9-9FFE-479F-8D48-6367761F0EF9}.Release|x86.ActiveCfg = Release|x86
+		{DDE5F3B9-9FFE-479F-8D48-6367761F0EF9}.Release|x86.Build.0 = Release|x86
+		{B3D03A81-EFD0-4CBF-A1C7-635A0958DEB9}.Debug|x86.ActiveCfg = Debug|x86
+		{B3D03A81-EFD0-4CBF-A1C7-635A0958DEB9}.Debug|x86.Build.0 = Debug|x86
+		{B3D03A81-EFD0-4CBF-A1C7-635A0958DEB9}.Release|x86.ActiveCfg = Release|x86
+		{B3D03A81-EFD0-4CBF-A1C7-635A0958DEB9}.Release|x86.Build.0 = Release|x86
+		{C61B6945-A4A0-4C33-B80C-9B33E7829E9A}.Debug|x86.ActiveCfg = Debug|x86
+		{C61B6945-A4A0-4C33-B80C-9B33E7829E9A}.Debug|x86.Build.0 = Debug|x86
+		{C61B6945-A4A0-4C33-B80C-9B33E7829E9A}.Release|x86.ActiveCfg = Release|x86
+		{C61B6945-A4A0-4C33-B80C-9B33E7829E9A}.Release|x86.Build.0 = Release|x86
+		{59D34FB9-D7E8-40A0-A7A1-6E5E42B5D94A}.Debug|x86.ActiveCfg = Debug|x86
+		{59D34FB9-D7E8-40A0-A7A1-6E5E42B5D94A}.Debug|x86.Build.0 = Debug|x86
+		{59D34FB9-D7E8-40A0-A7A1-6E5E42B5D94A}.Release|x86.ActiveCfg = Release|x86
+		{59D34FB9-D7E8-40A0-A7A1-6E5E42B5D94A}.Release|x86.Build.0 = Release|x86
+		{4F134CCA-8F00-4CE8-969E-A2987371AB9A}.Debug|x86.ActiveCfg = Debug|x86
+		{4F134CCA-8F00-4CE8-969E-A2987371AB9A}.Debug|x86.Build.0 = Debug|x86
+		{4F134CCA-8F00-4CE8-969E-A2987371AB9A}.Release|x86.ActiveCfg = Release|x86
+		{4F134CCA-8F00-4CE8-969E-A2987371AB9A}.Release|x86.Build.0 = Release|x86
+		{23754948-8AF4-4A7D-A770-AF39E064F6DB}.Debug|x86.ActiveCfg = Debug|x86
+		{23754948-8AF4-4A7D-A770-AF39E064F6DB}.Debug|x86.Build.0 = Debug|x86
+		{23754948-8AF4-4A7D-A770-AF39E064F6DB}.Release|x86.ActiveCfg = Release|x86
+		{23754948-8AF4-4A7D-A770-AF39E064F6DB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

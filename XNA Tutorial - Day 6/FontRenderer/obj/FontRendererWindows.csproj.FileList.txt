@@ -1,0 +1,10 @@
+bin\x86\Debug\FontRenderer.dll
+bin\x86\Debug\FontRenderer.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\FontRenderer.dll
+obj\x86\Debug\FontRenderer.pdb
+bin\x86\Release\FontRenderer.dll
+bin\x86\Release\FontRenderer.pdb
+obj\x86\Release\ResolveAssemblyReference.cache
+obj\x86\Release\FontRenderer.dll
+obj\x86\Release\FontRenderer.pdb

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>particle.png</Source>
+      <Name>particle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>bin\x86\Debug\particle.xnb</Output>
+      <Time>2007-03-08T19:49:28.232267+01:00</Time>
+    </Item>
+    <Item>
+      <Source>basics.png</Source>
+      <Name>basics</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>bin\x86\Debug\basics.xnb</Output>
+      <Time>2007-03-09T17:11:23.6067559+01:00</Time>
+    </Item>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <RootDirectory>W:\XNA Tutorial\XNA Tutorial - Day 1\Basics\</RootDirectory>
+      <IntermediateDirectory>W:\XNA Tutorial\XNA Tutorial - Day 1\Basics\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>W:\XNA Tutorial\XNA Tutorial - Day 1\Basics\bin\x86\Debug\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>V:\Program Files\Microsoft XNA\XNA Game Studio Express\v1.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2006-11-18T17:27:42+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>V:\Program Files\Microsoft XNA\XNA Game Studio Express\v1.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2006-11-18T17:28:34+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>V:\Program Files\Microsoft XNA\XNA Game Studio Express\v1.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2006-11-18T17:28:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>V:\Program Files\Microsoft XNA\XNA Game Studio Express\v1.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2006-11-18T17:27:26+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>V:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\1.0.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2007-02-11T07:45:54.3737165+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

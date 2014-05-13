@@ -1,0 +1,5 @@
+bin\Xbox 360\Debug\SkinnedModel.dll
+bin\Xbox 360\Debug\SkinnedModel.pdb
+obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+obj\Xbox 360\Debug\SkinnedModel.dll
+obj\Xbox 360\Debug\SkinnedModel.pdb

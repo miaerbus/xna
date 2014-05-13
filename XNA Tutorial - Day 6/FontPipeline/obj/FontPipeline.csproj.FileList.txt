@@ -1,0 +1,5 @@
+bin\x86\Debug\FontPipeline.dll
+bin\x86\Debug\FontPipeline.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\FontPipeline.dll
+obj\x86\Debug\FontPipeline.pdb

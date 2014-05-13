@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:NodeContent">
+    <Identity>
+      <SourceFilename>W:\XNA Tutorial\XNA Tutorial - Day 6\Bomberman\Content\Models\road4.X</SourceFilename>
+      <SourceTool>XImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+    <Children>
+      <Child Type="Graphics:MeshContent">
+        <Name>Object02</Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+        <Positions>100 26.8560562 -70 -70 26.8560562 70 -100 26.8560562 -70 70 26.8560562 70 -70 26.8560562 100 70 26.8560562 100 100 26.8560562 70 -100 26.8560562 70 -100 29.9999924 70 -70 29.9999924 100 -100 29.9999924 100 -70 29.9999924 70 100 29.9999924 100 70 29.9999924 70 100 29.9999924 70 70 29.9999924 100 100 29.9999924 -70 -100 29.9999924 -100 100 29.9999924 -100 -100 29.9999924 -70</Positions>
+        <Geometry>
+          <Batch>
+            <Material>#Resource1</Material>
+            <Indices>0 1 2 1 0 3 4 3 5 3 4 1 6 7 0 0 8 3 2 1 9 10 11 2 12 13 14 13 12 15 16 17 18 17 16 19 20 21 22 21 20 23 24 25 26 25 24 27 28 29 30 29 28 31 32 33 34 33 32 35 36 37 38 37 36 39 40 41 42 41 40 43</Indices>
+            <Vertices>
+              <PositionIndices>0 1 2 3 4 5 6 0 6 7 1 2 8 9 10 11 12 13 14 15 11 4 9 1 15 3 13 5 13 6 14 3 8 1 11 7 16 17 18 19 16 2 19 0</PositionIndices>
+              <Channels>
+                <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1</VertexChannel>
+                <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.4991139 0.0196681023 0.394386232 0.105914295 0.3759049 0.0196681023 0.480632454 0.105914354 0.394386232 0.124395669 0.480632454 0.124395728 0.4991139 0.105914354 0.4991139 0.0196681023 0.4991139 0.105914354 0.375904858 0.105914295 0.394386232 0.105914295 0.3759049 0.0196681023 0.375904858 0.105914295 0.394386232 0.124395669 0.375904858 0.124395669 0.394386232 0.105914295 0.4991139 0.124395728 0.480632454 0.105914354 0.4991139 0.105914354 0.480632454 0.124395728 0.4439468 0.0653561354 0.3938619 0.05784315 0.443946838 0.0578433871 0.39386186 0.0653559 0.486519 0.0653560162 0.4364341 0.05784309 0.486519039 0.0578433275 0.43643406 0.06535584 0.4439468 0.0653561354 0.3938619 0.05784315 0.443946838 0.0578433871 0.39386186 0.0653559 0.486519 0.0653560162 0.4364341 0.05784309 0.486519039 0.0578433275 0.43643406 0.06535584 0.4991139 0.0196681023 0.375896066 0.00118666887 0.4991139 0.00118666887 0.375896066 0.0196681023 0.486519 0.0653560162 0.4364341 0.05784309 0.486519039 0.0578433275 0.43643406 0.06535584</VertexChannel>
+              </Channels>
+            </Vertices>
+          </Batch>
+        </Geometry>
+      </Child>
+    </Children>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>W:\XNA Tutorial\XNA Tutorial - Day 6\Bomberman\Content\Models\road4.X</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">1 1 1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">3.19999981</Data>
+      </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
+    </Resource>
+  </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\..\Content\Models\teksture2.dds</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

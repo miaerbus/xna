@@ -1,0 +1,6 @@
+bin\x86\Debug\Content\pixelfont.xnb
+bin\x86\Debug\PhysicsDemo.exe
+bin\x86\Debug\PhysicsDemo.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\PhysicsDemo.exe
+obj\x86\Debug\PhysicsDemo.pdb

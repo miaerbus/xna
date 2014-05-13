@@ -1,0 +1,11 @@
+obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+bin\Xbox 360\Debug\FontRenderer.dll
+bin\Xbox 360\Debug\SkinnedModel.dll
+bin\Xbox 360\Debug\FontRenderer.pdb
+bin\Xbox 360\Debug\SkinnedModel.pdb
+bin\Xbox 360\Debug\XNA Tutorial Engine.dll
+bin\Xbox 360\Debug\XNA Tutorial Engine.pdb
+obj\Xbox 360\Debug\XNA Tutorial Engine.dll
+obj\Xbox 360\Debug\XNA Tutorial Engine.pdb
+bin\Xbox 360\Debug\system.xml.dll
+bin\Xbox 360\Debug\system.xml.xml

@@ -1,0 +1,241 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{053171C7-67C3-4C15-8549-8BE559C028F3}</ProjectGuid>
+    <ProjectTypeGuids>{9F340DF3-2AED-4330-AC16-78AC2D9B4738};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artificial.XNATutorial</RootNamespace>
+    <AssemblyName>XNA Tutorial Engine</AssemblyName>
+    <XnaFrameworkVersion>v1.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XNAGlobalContentPipelineAssemblies>Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</XNAGlobalContentPipelineAssemblies>
+    <XNAProjectContentPipelineAssemblies>
+    </XNAProjectContentPipelineAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABT\ABTRenderer.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ABTRenderer</Name>
+    </Compile>
+    <Compile Include="ABT\ABTLinkedList.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ABTLinkedList</Name>
+    </Compile>
+    <Compile Include="ABT\ABTNode.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ABTNode</Name>
+    </Compile>
+    <Compile Include="ABT\AdaptiveBinaryTree.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>AdaptiveBinaryTree</Name>
+    </Compile>
+    <Compile Include="ABT\CustomBoundingBoxABTItem.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CustomBoundingBoxABTItem</Name>
+    </Compile>
+    <Compile Include="ABT\IABTItem.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>IABTItem</Name>
+    </Compile>
+    <Compile Include="ABT\SceneABT.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>SceneABT</Name>
+    </Compile>
+    <Compile Include="Aggregation\DataCell.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>DataCell</Name>
+    </Compile>
+    <Compile Include="Aggregation\IInstallable.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>IInstallable</Name>
+    </Compile>
+    <Compile Include="Aggregation\Part.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Part</Name>
+    </Compile>
+    <Compile Include="Camera.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Camera</Name>
+    </Compile>
+    <Compile Include="Common\Common.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Common</Name>
+    </Compile>
+    <Compile Include="Graphics\Sprite.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Sprite</Name>
+    </Compile>
+    <Compile Include="Input.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Input</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\Convex.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Convex</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\ConvexPolygon.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ConvexPolygon</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\CustomCollider.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CustomCollider</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\DataPrimitives.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>DataPrimitives</Name>
+    </Compile>
+    <Compile Include="Aggregation\Item.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Item</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\ForceUser.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ForceUser</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\Movable.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Movable</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\Particle.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Particle</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\ParticleCollider.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ParticleCollider</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\Constraints.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Constraints</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\CollisionPlane.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CollisionPlane</Name>
+    </Compile>
+    <Compile Include="Physics\PhysicsRenderer.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>PhysicsRenderer</Name>
+    </Compile>
+    <Compile Include="Physics\Simulator parts\CollisionDetector.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CollisionDetector</Name>
+    </Compile>
+    <Compile Include="Physics\Simulator parts\ParticleConvexCollisions.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ParticleConvexCollisions</Name>
+    </Compile>
+    <Compile Include="Physics\Simulator parts\ParticleParticleCollisions.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ParticleParticleCollisions</Name>
+    </Compile>
+    <Compile Include="Simulator\ItemProcessStarter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ItemProcessStarter</Name>
+    </Compile>
+    <Compile Include="Simulator\ItemProcess.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ItemProcess</Name>
+    </Compile>
+    <Compile Include="Simulator\Simulator.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Simulator</Name>
+    </Compile>
+    <Compile Include="Graphics\PrimitiveBatch.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>PrimitiveBatch</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\ConvexCollider.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ConvexCollider</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\Rotatable.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Rotatable</Name>
+    </Compile>
+    <Compile Include="Physics\Item parts\TorqueUser.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>TorqueUser</Name>
+    </Compile>
+    <None Include="Physics\Simulator parts\CodeReference.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CodeReference</Name>
+    </None>
+    <Compile Include="Simulator\ISceneIterator.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ISceneIterator</Name>
+    </Compile>
+    <Compile Include="Physics\Simulator parts\ClassicalMechanics.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ClassicalMechanics</Name>
+    </Compile>
+    <Compile Include="Simulator\SimpleSceneIterator.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>SimpleSceneIterator</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Physics\Item parts\RigidBody.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>RigidBody</Name>
+    </Compile>
+    <Compile Include="Scene.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Scene</Name>
+    </Compile>
+    <Compile Include="Graphics\TextBatch.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>TextBatch</Name>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.ContentPipeline.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.Common.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

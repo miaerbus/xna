@@ -1,0 +1,10 @@
+bin\x86\Debug\SkinnedModel.dll
+bin\x86\Debug\SkinnedModel.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\SkinnedModel.dll
+obj\x86\Debug\SkinnedModel.pdb
+bin\x86\Release\SkinnedModel.dll
+bin\x86\Release\SkinnedModel.pdb
+obj\x86\Release\ResolveAssemblyReference.cache
+obj\x86\Release\SkinnedModel.dll
+obj\x86\Release\SkinnedModel.pdb

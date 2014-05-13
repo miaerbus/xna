@@ -1,0 +1,14 @@
+bin\x86\Debug\SkinnedModelPipeline.dll
+bin\x86\Debug\SkinnedModelPipeline.pdb
+bin\x86\Debug\SkinnedModel.dll
+bin\x86\Debug\SkinnedModel.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\SkinnedModelPipeline.dll
+obj\x86\Debug\SkinnedModelPipeline.pdb
+bin\x86\Release\SkinnedModelPipeline.dll
+bin\x86\Release\SkinnedModelPipeline.pdb
+bin\x86\Release\SkinnedModel.dll
+bin\x86\Release\SkinnedModel.pdb
+obj\x86\Release\ResolveAssemblyReference.cache
+obj\x86\Release\SkinnedModelPipeline.dll
+obj\x86\Release\SkinnedModelPipeline.pdb

@@ -1,0 +1,9 @@
+obj\x86\Debug\ResolveAssemblyReference.cache
+bin\x86\Debug\Content\pixelfont.xnb
+bin\x86\Debug\XNA Tutorial Engine.dll
+bin\x86\Debug\XNA Tutorial Engine.pdb
+bin\x86\Debug\Pong.exe
+bin\x86\Debug\Pong.pdb
+obj\x86\Debug\Pong.exe
+obj\x86\Debug\Pong.pdb
+bin\x86\Debug\Content\pong.xnb

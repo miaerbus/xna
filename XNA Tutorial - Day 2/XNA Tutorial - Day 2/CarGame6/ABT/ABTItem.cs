@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+
+namespace Artificial.XNATutorial.CarGame
+{
+    public class ABTItem<T> : IABTItem
+    {
+        // Position
+        private Vector3 position;
+        public Vector3 Position
+        {
+            get
+            {
+                return position;
+            }
+            set
+            {
+                position = value;
+                RaiseOnPositionChanged();
+            }
+        }
+        public event EventHandler OnPositionChanged;
+        private void RaiseOnPositionChanged()
+        {
+            EventHandler e = OnPositionChanged;
+            if (e != null) e(this, null);
+        }
+
+        // Bounding box
+        private BoundingBox boundingBox;
+        public BoundingBox BoundingBox
+        {
+            get
+            {
+                return boundingBox;
+            }
+            set
+            {
+                boundingBox = value;
+            }
+        }
+
+        // Tag
+        private T tag;
+        public T Tag
+        {
+            get
+            {
+                return tag;
+            }
+            set
+            {
+                tag = value;
+            }
+        }
+    }
+}

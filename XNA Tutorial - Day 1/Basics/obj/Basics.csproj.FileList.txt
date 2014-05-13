@@ -1,0 +1,17 @@
+bin\x86\Debug\Basics.exe
+bin\x86\Debug\Basics.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\Basics.exe
+obj\x86\Debug\Basics.pdb
+bin\x86\Debug\particle.xnb
+bin\x86\Release\particle.xnb
+bin\x86\Release\basics.png
+bin\x86\Release\basicsblack.png
+bin\x86\Release\Basics.exe
+bin\x86\Release\Basics.pdb
+obj\x86\Release\ResolveAssemblyReference.cache
+obj\x86\Release\Artificial.XNATutorial.Basics.MenuForm.resources
+obj\x86\Release\Basics.csproj.GenerateResource.Cache
+obj\x86\Release\Basics.exe
+obj\x86\Release\Basics.pdb
+bin\x86\Debug\basics.xnb

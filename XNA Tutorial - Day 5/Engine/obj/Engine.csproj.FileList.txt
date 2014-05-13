@@ -1,0 +1,9 @@
+bin\x86\Debug\XNA Tutorial Engine.dll
+bin\x86\Debug\XNA Tutorial Engine.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\XNA Tutorial Engine.dll
+obj\x86\Debug\XNA Tutorial Engine.pdb
+bin\x86\Debug\SkinnedModel.dll
+bin\x86\Debug\SkinnedModel.pdb
+bin\x86\Debug\FontRenderer.dll
+bin\x86\Debug\FontRenderer.pdb

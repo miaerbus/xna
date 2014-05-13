@@ -1,0 +1,5 @@
+bin\x86\Debug\XNA Tutorial Engine.dll
+bin\x86\Debug\XNA Tutorial Engine.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\XNA Tutorial Engine.dll
+obj\x86\Debug\XNA Tutorial Engine.pdb

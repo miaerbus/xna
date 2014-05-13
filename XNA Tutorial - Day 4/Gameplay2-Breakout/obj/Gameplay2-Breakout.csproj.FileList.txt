@@ -1,0 +1,9 @@
+obj\x86\Debug\ResolveAssemblyReference.cache
+bin\x86\Debug\Content\pixelfont.xnb
+bin\x86\Debug\Breakout.exe
+bin\x86\Debug\Breakout.pdb
+bin\x86\Debug\XNA Tutorial Engine.dll
+bin\x86\Debug\XNA Tutorial Engine.pdb
+obj\x86\Debug\Breakout.exe
+obj\x86\Debug\Breakout.pdb
+bin\x86\Debug\Content\breakout.xnb

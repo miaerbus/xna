@@ -1,0 +1,9 @@
+bin\Xbox 360\Debug\Content\car.xnb
+bin\Xbox 360\Debug\Content\pixelfont.xnb
+bin\Xbox 360\Debug\Content\3dhouse.xnb
+bin\Xbox 360\Debug\3dhouse1~0.xnb
+bin\Xbox 360\Debug\CarGame.exe
+bin\Xbox 360\Debug\CarGame.pdb
+obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+obj\Xbox 360\Debug\CarGame.exe
+obj\Xbox 360\Debug\CarGame.pdb

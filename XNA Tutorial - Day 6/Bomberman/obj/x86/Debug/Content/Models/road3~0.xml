@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:NodeContent">
+    <Identity>
+      <SourceFilename>W:\XNA Tutorial\XNA Tutorial - Day 6\Bomberman\Content\Models\road3.X</SourceFilename>
+      <SourceTool>XImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+    <Children>
+      <Child Type="Graphics:MeshContent">
+        <Name>Box03</Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+        <Positions>-100 26.8874531 69.97613 100 26.8874531 -70.02387 100 26.8874531 69.97613 -100 26.8874531 -70.02387 100 30.03139 69.97613 -100 30.03139 99.97613 -100 30.03139 69.97613 100 30.03139 99.97613 -100 30.03139 -70.02387 100 30.03139 -100.023872 100 30.03139 -70.02387 -100 30.03139 -100.023872</Positions>
+        <Geometry>
+          <Batch>
+            <Material>#Resource1</Material>
+            <Indices>0 1 2 1 0 3 4 5 6 5 4 7 8 9 10 9 8 11 12 13 14 13 12 15 16 17 18 17 16 19</Indices>
+            <Vertices>
+              <PositionIndices>0 1 2 3 4 5 6 7 8 9 10 11 2 6 0 4 3 10 1 8</PositionIndices>
+              <Channels>
+                <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1</VertexChannel>
+                <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.00121126312 0.199164748 0.123956628 0.113242924 0.123956628 0.199164748 0.00121126312 0.113242924 0.123956628 0.199164748 0.00121126312 0.2175765 0.00121126312 0.199164748 0.123956628 0.2175765 0.00121126312 0.113242924 0.123956628 0.09483117 0.123956628 0.113242924 0.00121126312 0.09483117 0.123956628 0.199164748 0.00121126312 0.199164748 0.00121126312 0.199164748 0.123956628 0.199164748 0.00121126312 0.113242924 0.123956628 0.113242924 0.123956628 0.113242924 0.00121126312 0.113242924</VertexChannel>
+              </Channels>
+            </Vertices>
+          </Batch>
+        </Geometry>
+      </Child>
+    </Children>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>W:\XNA Tutorial\XNA Tutorial - Day 6\Bomberman\Content\Models\road3.X</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">1 1 1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">3.19999981</Data>
+      </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
+    </Resource>
+  </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\..\Content\Models\teksture2.dds</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

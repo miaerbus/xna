@@ -1,0 +1,6 @@
+obj\x86\Debug\ResolveAssemblyReference.cache
+bin\x86\Debug\particle.xnb
+bin\x86\Debug\BasicsClean.exe
+bin\x86\Debug\BasicsClean.pdb
+obj\x86\Debug\BasicsClean.exe
+obj\x86\Debug\BasicsClean.pdb

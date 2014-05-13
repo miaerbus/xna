@@ -1,0 +1,8 @@
+obj\x86\Debug\ResolveAssemblyReference.cache
+bin\x86\Debug\Content\pixelfont.xnb
+bin\x86\Debug\PhysicsDemo.exe
+bin\x86\Debug\PhysicsDemo.pdb
+obj\x86\Debug\PhysicsDemo.exe
+obj\x86\Debug\PhysicsDemo.pdb
+bin\x86\Debug\Content\3dhouse.xnb
+bin\x86\Debug\3dhouse1~0.xnb

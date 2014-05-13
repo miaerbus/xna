@@ -1,0 +1,431 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{23754948-8AF4-4A7D-A770-AF39E064F6DB}</ProjectGuid>
+    <ProjectTypeGuids>{9F340DF3-2AED-4330-AC16-78AC2D9B4738};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artificial.XNATutorial.Bomberman</RootNamespace>
+    <AssemblyName>Bomberman</AssemblyName>
+    <XnaFrameworkVersion>v1.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <XNAGlobalContentPipelineAssemblies>Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</XNAGlobalContentPipelineAssemblies>
+    <XNAProjectContentPipelineAssemblies>$(ProjectDir)..\FontPipeline\bin\x86\Debug\FontPipeline.dll;$(ProjectDir)..\SkinnedModelPipeline\bin\x86\Debug\SkinnedModelPipeline.dll</XNAProjectContentPipelineAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bomberman.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Bomberman</Name>
+    </Compile>
+    <Compile Include="BombermanGlobals.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>BombermanGlobals</Name>
+    </Compile>
+    <Compile Include="Gameplay\Gameplay.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Gameplay</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\Bomb.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Bomb</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\Building.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Building</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\BuildingSystem.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>BuildingSystem</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\BuildingType.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>BuildingType</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\Character.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Character</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\CharacterType.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CharacterType</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\Explosion.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Explosion</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\Level.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Level</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\LevelGenerator.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>LevelGenerator</Name>
+    </Compile>
+    <Compile Include="Gameplay\Logic\Rules.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Rules</Name>
+    </Compile>
+    <Compile Include="Gameplay\Renderer\CharacterRenderInfo.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CharacterRenderInfo</Name>
+    </Compile>
+    <Compile Include="Gameplay\Renderer\ExplosionFX.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ExplosionFX</Name>
+    </Compile>
+    <Compile Include="Gameplay\Renderer\WorldRenderer.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>WorldRenderer</Name>
+    </Compile>
+    <Compile Include="Menus\MainMenu.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>MainMenu</Name>
+    </Compile>
+    <Compile Include="Menus\Menu.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Menu</Name>
+    </Compile>
+    <Compile Include="Menus\MenuRenderer.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>MenuRenderer</Name>
+    </Compile>
+    <Compile Include="Menus\Options.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Options</Name>
+    </Compile>
+    <Compile Include="Program.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Program</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransitionRenderer.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>TransitionRenderer</Name>
+    </Compile>
+    <Compile Include="Splash\Splash.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Splash</Name>
+    </Compile>
+    <Compile Include="Splash\SplashRenderer.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>SplashRenderer</Name>
+    </Compile>
+    <Compile Include="State.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>State</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\GUI\background1.jpg">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>background1</Name>
+    </Content>
+    <Content Include="Content\GUI\background2.jpg">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>background2</Name>
+    </Content>
+    <Content Include="Content\GUI\background3.jpg">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>background3</Name>
+    </Content>
+    <Content Include="Content\GUI\background4.jpg">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>background4</Name>
+    </Content>
+    <Content Include="Content\GUI\font.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>BitmapFontProcessor</Processor>
+      <Name>font</Name>
+    </Content>
+    <Content Include="Content\GUI\logos.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>logos</Name>
+    </Content>
+    <Content Include="Content\Special FX\dim1.PNG">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>dim1</Name>
+    </Content>
+    <Content Include="Content\Special FX\dim2.PNG">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>dim2</Name>
+    </Content>
+    <Content Include="Content\Special FX\dim3.PNG">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>dim3</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija1.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija1</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija2.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija2</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija3.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija3</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija4.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija4</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija5.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija5</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija6.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija6</Name>
+    </Content>
+    <Content Include="Content\Special FX\explozija7.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>explozija7</Name>
+    </Content>
+    <Content Include="Content\Special FX\ring.PNG">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>ring</Name>
+    </Content>
+    <Content Include="Game.ico">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Game</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Characters\buca.x">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Name>buca</Name>
+    </Content>
+    <Content Include="Content\Characters\vesolc.x">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Name>vesolc</Name>
+    </Content>
+    <Content Include="Content\Models\bomb1.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>bomb1</Name>
+    </Content>
+    <Content Include="Content\Models\box_green_blue.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>box_green_blue</Name>
+    </Content>
+    <Content Include="Content\Models\box_red_blue.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>box_red_blue</Name>
+    </Content>
+    <Content Include="Content\Models\building1.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building1</Name>
+    </Content>
+    <Content Include="Content\Models\building2.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building2</Name>
+    </Content>
+    <Content Include="Content\Models\building3.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building3</Name>
+    </Content>
+    <Content Include="Content\Models\building4.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building4</Name>
+    </Content>
+    <Content Include="Content\Models\building5.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building5</Name>
+    </Content>
+    <Content Include="Content\Models\building6.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building6</Name>
+    </Content>
+    <Content Include="Content\Models\building7.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building7</Name>
+    </Content>
+    <Content Include="Content\Models\building8.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building8</Name>
+    </Content>
+    <Content Include="Content\Models\building9.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>building9</Name>
+    </Content>
+    <Content Include="Content\Models\road1.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>road1</Name>
+    </Content>
+    <Content Include="Content\Models\road2.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>road2</Name>
+    </Content>
+    <Content Include="Content\Models\road3.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>road3</Name>
+    </Content>
+    <Content Include="Content\Models\road4.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>road4</Name>
+    </Content>
+    <Content Include="Content\Models\road5.X">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>road5</Name>
+    </Content>
+    <Content Include="Content\Models\teksture1.dds">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>teksture1</Name>
+    </Content>
+    <Content Include="Content\Models\teksture2.dds">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>teksture2</Name>
+    </Content>
+    <Content Include="Content\pixelfont.dds">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>pixelfont</Name>
+    </Content>
+    <Content Include="Content\SkinnedModel.fx">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Name>SkinnedModel</Name>
+    </Content>
+    <Content Include="Content\Sound\Bomberman.xap">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+      <Name>Bomberman</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{053171C7-67C3-4C15-8549-8BE559C028F3}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FontRenderer\FontRendererWindows.csproj">
+      <Project>{59D34FB9-D7E8-40A0-A7A1-6E5E42B5D94A}</Project>
+      <Name>FontRendererWindows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.ContentPipeline.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.Common.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

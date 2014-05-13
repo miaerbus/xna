@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
+using Artificial.XNATutorial;
+using Artificial.XNATutorial.Physics;
+
+namespace Artificial.XNATutorial.Bomberman
+{
+    public class Explosion : Item
+    {
+        Vector3 direction;
+        public Vector3 Direction
+        {
+            get
+            {
+                return direction;
+            }
+        }
+
+        int power;
+
+        int frame = 0;
+        public int Frame
+        {
+            get
+            {
+                return frame;
+            }
+        }
+
+        public Explosion(Vector3 position, Vector3 direction, int power)
+        {
+            this.direction = direction;
+            this.power = power;
+
+            Require<PPositionWithEvents>().Position = position;
+            Require<PBoundingSphere>().BoundingSphere = new BoundingSphere(Vector3.Zero, Gameplay.GridSize * 0.25f);
+            Require<ParticleCollider>().ParticleRadius = Gameplay.GridSize * 0.24f;
+
+            // Update
+            Require<ItemProcess>().Process = update;
+
+            CustomCollider collider = Require<CustomCollider>();
+            collider.OverrideCollisionWithType.Add(typeof(Explosion));
+            collider.OverrideCollisionWithType.Add(typeof(Bomb));
+            collider.OverrideCollisionWithType.Add(typeof(Building));
+            collider.OverrideCollisionWithType.Add(typeof(Character));
+            collider.CollisionMethod += Collide;
+        }
+
+        void update(float dt)
+        {
+            frame++;
+            if (frame > 1)
+            {
+                Gameplay.Level.Scene.Remove(this);
+                if (power > 0)
+                {
+                    Vector3 p = Part<PPosition>().Position;
+                    if (direction == Vector3.Zero)
+                    {
+                        Gameplay.Level.Scene.Add(new Explosion(p + Vector3.Left * Gameplay.GridSize, Vector3.Left, power - 1));
+                        Gameplay.Level.Scene.Add(new Explosion(p + Vector3.Right * Gameplay.GridSize, Vector3.Right, power - 1));
+                        Gameplay.Level.Scene.Add(new Explosion(p + Vector3.Forward * Gameplay.GridSize, Vector3.Forward, power - 1));
+                        Gameplay.Level.Scene.Add(new Explosion(p + Vector3.Backward * Gameplay.GridSize, Vector3.Backward, power - 1));
+                    }
+                    else
+                    {
+                        Gameplay.Level.Scene.Add(new Explosion(p + direction * Gameplay.GridSize, direction, power - 1));
+                    }
+                }
+            }
+        }
+
+        void Collide(float elapsedSeconds, Item collidingItem, Vector3 impactPoint)
+        {
+            if (collidingItem.Is<Building>() || collidingItem.Is<Bomb>())
+            {
+                Gameplay.Level.Scene.Remove(this);
+            }
+        }
+    }
+}

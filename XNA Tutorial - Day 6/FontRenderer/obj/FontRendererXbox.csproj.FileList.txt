@@ -1,0 +1,5 @@
+bin\Xbox 360\Debug\FontRenderer.dll
+bin\Xbox 360\Debug\FontRenderer.pdb
+obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+obj\Xbox 360\Debug\FontRenderer.dll
+obj\Xbox 360\Debug\FontRenderer.pdb
